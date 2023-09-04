@@ -24,7 +24,7 @@ export default function Temperature() {
   }, [coords]);
 
   return (
-    <p className="text-2xl py-4">
+    <p className="text-2xl m-4">
       {!isGeolocationAvailable
         ? "I can't find you :("
         : !isGeolocationEnabled

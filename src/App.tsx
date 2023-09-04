@@ -4,20 +4,23 @@ import Temperature from "./components/Temperature";
 
 function App() {
   return (
-    <div className="container h-screen mx-auto flex flex-col justify-center">
-      <div className="text-center py-6">
-        <h1 className="text-3xl font-bold py-3">Weather Report</h1>
+    <section className="grid grid-cols-1 sm:grid-cols-2 text-center max-w-2xl mx-auto">
+      <div className="flex flex-col m-4">
+        <div className="flex justify-center">
+          <h1 className="text-4xl font-medium">Weer?</h1>
+        </div>
         <Temperature />
-        <p className="py-3">
+      </div>
+      <div className="mx-auto">
+        <p className="m-2">
           What is love?
         </p>
         <iframe
-          className="aspect-video h-48 mx-auto"
+          className="aspect-video rounded-md w-full"
           src="https://www.youtube.com/embed/HEXWRTEbj1I"
-        >
-        </iframe>
+        />
       </div>
-    </div>
+    </section>
   );
 }
 
