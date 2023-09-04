@@ -24,7 +24,7 @@ export default function Temperature() {
   }, [coords]);
 
   return (
-    <p className="text-2xl m-4">
+    <div className="text-2xl m-4">
       {!isGeolocationAvailable
         ? "I can't find you :("
         : !isGeolocationEnabled
@@ -32,6 +32,6 @@ export default function Temperature() {
         : !temperature
         ? <LoadingCircle />
         : `${temperature}°C`}
-    </p>
+    </div>
   );
 }
